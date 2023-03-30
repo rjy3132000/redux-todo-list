@@ -12,7 +12,7 @@ function Home() {
   let dispatch = useDispatch();
   let list = useSelector((state) => state.todo_List.list);
   const [update, setUpdate] = useState(false);
-  let [user, setUsers] = useState(list);
+  let [user, setUsers] = useState(list); // eslint-disable-line
 
   const updateInitialized = (id, data) => {
     setUpdate(true);
